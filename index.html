@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bap-A-Wat</title>
+</head>
+
+<body>
+<nav>
+  <img src="logo.svg" alt="logo" class="logo">
+  <h1>Bap-A-Wat</h1>
+</nav>
+
+<div class="game-info">
+  <div id="score">Score: 0</div>
+  <div id="timer">Time: 30s</div>
+</div>
+<div class="button-container">
+  <button id="startButton">Start Game</button>
+  <button id="howToPlay">How to Play</button>
+  <button id="endButton" disabled>End Game</button>
+</div>
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>
+      How to Play
+    </h2>
+    <p>
+      • Hit Play to start the game.<br>
+      • Keep an eye out for Watty – he’ll pop up randomly!<br>
+      • When you spot Watty, give him a good bap!<br>
+      • Every successful bap earns you a point.<br>
+      • Rack up as many points as you can in 30 seconds!<br><br>
+
+      Dedicated to my cat Watty (bo batty)
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+<div class="game-board">
+  <div class="hole" id="hole1"></div>
+  <div class="hole" id="hole2"></div>
+  <div class="hole" id="hole3"></div>
+  <div class="hole" id="hole4"></div>
+  <div class="hole" id="hole5"></div>
+  <div class="hole" id="hole6"></div>
+  <div class="hole" id="hole7"></div>
+  <div class="hole" id="hole8"></div>
+  <div class="hole" id="hole9"></div>
+  <div class="hole" id="hole10"></div>
+  <div class="hole" id="hole11"></div>
+  <div class="hole" id="hole12"></div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

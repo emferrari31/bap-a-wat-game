@@ -1,0 +1,157 @@
+body {
+    background-color: #ffb200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: baseline
+
+}
+
+.logo {
+    height: 60px;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 2.7rem;
+    color: black;
+}
+
+.game-info {
+    font-size: 1rem;
+    font-family: monospace;
+    color: black;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#startButton {
+    /*border: 1px solid blue;*/
+    border-radius: 15px;
+    width: 100px;
+    padding: 10px;
+    background-color: #1356ff;
+    color: white;
+}
+
+#endButton {
+    /*border: 1px solid blue;*/
+    border-radius: 15px;
+    width: 100px;
+    padding: 10px;
+    background-color: #1356ff;
+    color: white;
+}
+#howToPlay {
+    /*border: 1px solid blue;*/
+    border-radius: 15px;
+    width: 100px;
+    padding: 10px;
+    background-color: #1356ff;
+    color: white;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    width: 700px;
+    height: auto;
+    background-color: #419a36;
+    border-radius: 14px;
+}
+
+.hole {
+    width: 155px;
+    height: 155px;
+    background-color: #00e3ff;
+    border-radius: 80px;
+    margin: 10px;
+}
+
+.mole {
+    background-size: 160px;
+    background-image: url("wat.svg");
+}
+
+
+
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    font-family: Arial;
+    line-height: 1.3;
+    text-align: center;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .game-board {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        width: 340px;
+        height: auto;
+        background-color: #419a36;
+        border-radius: 14px;
+    }
+    .hole {
+        width: 90px;
+        height: 90px;
+        background-color: #00e3ff;
+        border-radius: 80px;
+        margin: 10px;
+    }
+    .mole {
+        background-size: 90px;
+        background-image: url("wat.svg");
+    }
+
+}
